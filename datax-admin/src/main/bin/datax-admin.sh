@@ -48,7 +48,7 @@ load_env(){
                 key=${line%%=*}
                 value=${line#*=}
                 key1=$(echo ${key} | tr '.' '_')
-                if [ -z $(echo "${key1}" | grep -P '\s*#+.*') ]; then
+                if [ -z $(echo "${key1}" | egrep '\s*#+.*') ]; then
                         eval "${key1}=${value}"
                 fi
         fi
