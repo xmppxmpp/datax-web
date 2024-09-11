@@ -82,7 +82,7 @@ if [[ ! ${JSON_PATH} ]]; then
 fi
 
 if [[ ! ${PYTHON_PATH} ]]; then
-   PYTHON_PATH=${PYTHON_PATH}
+   PYTHON_PATH=/datax/bin/datax.py
 fi
 
 if [[ ! ${SERVER_PORT} ]]; then
