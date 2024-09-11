@@ -63,7 +63,8 @@ public class ExecutorJobHandler extends IJobHandler {
 
         try {
             String[] cmdarrayFinal = buildDataXExecutorCmd(trigger, tmpFilePath,dataXPyPath);
-            final Process process = Runtime.getRuntime().exec(cmdarrayFinal);
+            String str = String.join(" ", cmdarrayFinal);
+            final Process process = Runtime.getRuntime().exec(str);
             String prcsId = ProcessUtil.getProcessId(process);
             JobLogger.log("------------------DataX process id: " + prcsId);
             jobTmpFiles.put(prcsId, tmpFilePath);
@@ -149,7 +150,7 @@ public class ExecutorJobHandler extends IJobHandler {
         if (!FileUtil.exist(jsonPath)) {
             FileUtil.mkdir(jsonPath);
         }
-        tmpFilePath = jsonPath + "jobTmp-" + IdUtil.simpleUUID() + ".conf";
+        tmpFilePath = jsonPath + File.separator + "jobTmp-" + IdUtil.simpleUUID() + ".conf";
         // 根据json写入到临时本地文件
         try (PrintWriter writer = new PrintWriter(tmpFilePath, "UTF-8")) {
             writer.println(jobJson);
