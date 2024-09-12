@@ -50,7 +50,7 @@ public class JobTrigger {
             logger.warn(">>>>>>>>>>>> trigger fail, jobId invalid，jobId={}", jobId);
             return;
         }
-        if (GlueTypeEnum.BEAN.getDesc().equals(jobInfo.getGlueType())) {
+        if (GlueTypeEnum.DATAX.getDesc().equals(jobInfo.getGlueType())) {
             //解密账密
             String json = JSONUtils.changeJson(jobInfo.getJobJson(), JSONUtils.decrypt);
             jobInfo.setJobJson(json);
@@ -161,6 +161,9 @@ public class JobTrigger {
         }
         //jvm parameter
         triggerParam.setJvmParam(jobInfo.getJvmParam());
+
+        //custom parameter
+        triggerParam.setCustomParam(jobInfo.getCustomParam());
 
         // 3、init address
         String address = null;

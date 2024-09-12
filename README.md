@@ -1,9 +1,3 @@
-![GitHub contributors](https://img.shields.io/github/contributors/WeiYe-Jing/datax-web)
-![GitHub issues](https://img.shields.io/github/issues/WeiYe-Jing/datax-web)
-![GitHub](https://img.shields.io/github/license/WeiYe-Jing/datax-web)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/WeiYe-Jing/datax-web)
-![](https://img.shields.io/badge/qq%E7%BE%A4-776939467-green.svg)
-
 # DataX-Web
 
 [![Stargazers over time](https://starchart.cc/WeiYe-Jing/datax-web.svg)](https://starchart.cc/WeiYe-Jing/datax-web)
@@ -268,8 +262,8 @@ Copyright (c) 2020 WeiYe
 [参与贡献](https://github.com/WeiYe-Jing/datax-web/issues/190)
 
 
-# Contact us
-
+## 新增自定义参数
+=======
 ### 个人微信
 ![](https://datax-web.oss-cn-hangzhou.aliyuncs.com/doc/WechatIMG2.jpeg?x-oss-process=image/resize,w_230,h_230)
 
@@ -277,5 +271,6 @@ Copyright (c) 2020 WeiYe
 ![](https://datax-web.oss-cn-hangzhou.aliyuncs.com/doc/qrcode3.jpeg?x-oss-process=image/resize,w_250,h_300)
 
 
+- 示例
 
-
+  <img src="doc/pic/Snipaste_2022-07-13_13-56-09.png" style="zoom:50%;" />

@@ -75,7 +75,7 @@ uncompress_packages(){
         fi
         if [ ${do_uncompress} == 0 ]; then
           LOG INFO "\033[1m Uncompress package: [${pack}] to modules directory\033[0m"
-          tar --skip-old-files -zxf ${PACKAGE_DIR}/${pack} -C ${MODULES_DIR}
+          tar -zxf ${PACKAGE_DIR}/${pack} -C ${MODULES_DIR}
         fi
       elif [[ ${pack} =~ zip$ ]]; then
         local do_uncompress=0
